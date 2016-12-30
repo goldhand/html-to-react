@@ -5,9 +5,13 @@ var processingInstructions = require('./lib/processing-instructions');
 var isValidNodeDefinitions = require('./lib/is-valid-node-definitions');
 var processNodeDefinitions = require('./lib/process-node-definitions');
 
-module.exports = {
+var HtmlToReact = {
   Parser: parser,
   ProcessingInstructions: processingInstructions,
   IsValidNodeDefinitions: isValidNodeDefinitions,
   ProcessNodeDefinitions: processNodeDefinitions,
 };
+
+module.exports = HtmlToReact;
+
+window.HtmlToReact = HtmlToReact;
